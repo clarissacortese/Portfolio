@@ -10,7 +10,7 @@
 (function () {
   'use strict';
 
-  if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+  if (navigator.userAgent.match(/IEMobile//10/.0/)) {
     var msViewportStyle = document.createElement('style')
     msViewportStyle.appendChild(
       document.createTextNode(
