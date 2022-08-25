@@ -178,6 +178,7 @@ h2 {
 }
 
 .portfolio-container {
+  padding-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
