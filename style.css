@@ -300,4 +300,5 @@ input[type=submit]:active {
 .text-muted {
   text-align: center;
   color: #2B4038;
+  opacity: 70%;
 }
