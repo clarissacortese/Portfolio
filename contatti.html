@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets\bootstrap\bootstrap.min.css" rel="stylesheet">
+    <link href="assets\bootstrap\ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <title>Clarissa Cortese - Contatti</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets\images\cc.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=WindSong&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Clarissa Cortese</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-me.html">About Me</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="skills.html">Skills</a></li>
+              </ul>
+            </li>
+            <li class="active"><a href="contatti.html">Contatti</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div class="container">
+      <div class="home-template">
+        <div class="my-name">
+          <h1>Clarissa Cortese</h1>
+        </div>
+        <h2 class="lead">Aspirante UX/UI Designer</h2>
+      </div>
+    </div><!-- /.container -->
+    <div class="container">
+      <div class="form-template">
+        <p style="text-align: center">Lasciami un messaggio e ti risponderò il prima possibile!</p>
+        <form id="contact-form">
+        <input type="hidden" name="contact_number">
+        <label>Name</label>
+        <input type="text" name="user_name">
+        <label>Email</label>
+        <input type="email" name="user_email">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send">
+    </form>
+      </div>
+    </div><!-- /.container -->
+    <div class="social-container">
+        <a href="https://www.instagram.com/clarissa_cortese/"><img class="social" src='assets\images\Instagram.png'/></a>
+        <a href="https://www.facebook.com/ClarissaCortese3/"><img class="social" src='assets\images\Facebook.png'/></a>
+        <a href="https://www.linkedin.com/in/clarissa-cortese-42a9a5244/"><img class="social" src='assets\images\Linkedin.png'/></a>
+        <a href="https://www.goodreads.com/clarissacortese/"><img class="social" src='assets\images\Goodreads.png'/></a>
+    </div><!-- /.container -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="text-muted">Clarissa Cortese - Portfolio - 2022</p>
+      </div>
+    </footer>
+   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+   <script>window.jQuery || document.write('<script src="assets\bootstrap\jquery.min.js"><\/script>')</script>
+   <script src="assets\bootstrap\bootstrap.min.js"></script>
+   <script src="assets\bootstrap\ie10-viewport-bug-workaround.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('SHlSTKGlaEOf0p1Zq');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        alert('Il tuo messaggio è stato inviato!');
+                    }, function(error) {
+                        alert('Qualcosa è andato storto!', error);
+                    });
+            });
+        }
+    </script>
+  </body>
+</html>
