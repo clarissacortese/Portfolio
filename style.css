@@ -128,53 +128,14 @@ h2 {
   height: 20px;
 }
 
-.ux-ui {
+.skills-display {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.grafica {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.programmazione {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.soft-skills {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.ux-ui-skill {
-  min-width: 160px;
-}
-
-.grafica-skill {
-  min-width: 160px;
-}
-
-.programmazione-skill {
-  min-width: 160px;
-}
-
-.soft-1 {
-  min-width: 160px;
-}
-
-.skill {
+.card-img-top {
   max-width: 80px;
-}
-
-.skill:hover {
-  background-color: rgba(206, 120, 107, 0.3);
-  box-shadow: 0 0 100px #6A4743;
 }
 
 .portfolio-container {
