@@ -282,6 +282,8 @@ input[type=submit]:active {
 .social {
   max-width: 60px;
   max-height: 60px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 6px #6A4743;
 }
 
 .footer {
