@@ -34,6 +34,10 @@ h2 {
   font-size: 40px;
 }
 
+.container {
+  width: 100%;
+}
+
 .home-template {
   width: 100%;
   padding: 40px 15px;
@@ -83,8 +87,11 @@ h2 {
 }
 
 .home-img {
-  max-width: 700px;
-  min-width: 100px;
+  max-width: 300px;
+  min-width: 20px
+  background-color: rgba(206, 120, 107, 0.3);
+  box-shadow: 0 0 100px #FFFFFF;
+  border-radius: 20px;
 }
 
 .aboutme-template {
@@ -92,7 +99,7 @@ h2 {
   padding: 40px 15px;
   text-align: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -105,7 +112,7 @@ h2 {
 
 .my-photo {
   max-width: 500px;
-  min-width: 50px;
+  min-width: 20px;
 }
 
 .my-name {
@@ -254,6 +261,8 @@ input[type=submit]:active {
 
 .social-container {
   position: absolute;
+  left:0;
+  right: 0;
   bottom: 60px;
   height: 120px;
   width: 100%;
@@ -272,6 +281,8 @@ input[type=submit]:active {
 .footer {
   position: absolute;
   bottom: 0;
+  left:0;
+  right: 0;
   width: 100%;
   height: 60px;
 }
