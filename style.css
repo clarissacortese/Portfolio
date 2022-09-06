@@ -49,6 +49,7 @@ h2 {
 .my-name {
   font-family: 'WindSong', cursive;
   font-size: 70px;
+  font-weight: lighter;
 }
 
 .btn-primary {
