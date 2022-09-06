@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/bootstrap/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <title>Clarissa Cortese - Skills</title>
     <link href="style.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/images/cc.png">
@@ -15,208 +15,258 @@
     <link href="https://fonts.googleapis.com/css2?family=WindSong&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" aria-label="Fourth navbar example">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Clarissa Cortese</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-me.html">About Me</a></li>
-            <li class="active" class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
+        <a class="navbar-brand" href="index.html">Clarissa Cortese</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarhome" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarhome">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-me.html">About Me</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
               <ul class="dropdown-menu">
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="skills.html">Skills</a></li>
+                <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
+                <li><a class="dropdown-item" href="skills.html">Skills</a></li>
               </ul>
             </li>
-            <li><a href="contatti.html">Contatti</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="contatti.html">Contatti</a>
+            </li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
+    <!-- Fixed navbar -->
+    <!-- Hero -->
+    <div class="px-4 py-5 my-2 text-center">
+      <img class="d-block mx-auto mb-4" src="assets\images\cc.png" width="72" height="57">
+      <h1 class="my-name display-5 fw-bold">Clarissa Cortese</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Aspirante UX/UI Designer</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" onclick="location.href='portfolio.html'" class="btn btn-primary btn-lg px-4 gap-3">Portfolio</button>
+          <button type="button" onclick="location.href='contatti.html'" class="btn btn-primary btn-lg px-4">Scrivimi</button>
+        </div>
+      </div>
+    </div>
+    <!-- Hero -->
+    <!-- Skills -->
     <div class="container">
-      <div class="home-template">
-        <div class="my-name">
-          <h1>Clarissa Cortese</h1>
-        </div>
-        <h2 class="lead">Aspirante UX/UI Designer</h2>
-      </div>
-    </div><!-- /.container -->
-    <div class="skills-container">
+      <div class="py-4 text-center">
         <h1>Hard Skills</h1>
-        <div class="space">
-        </div>
-        <h2>UX/UI Design</h2>
-        <div class="space">
-        </div>
-        <div class="skills-display">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="assets/images/Discovery.png">
-            <div class="card-body">
-            <p class="card-text">Discovery</p>
-          </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="assets/images/Wireframing.png">
-            <div class="card-body">
-            <p class="card-text">Wireframing</p>
-          </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="assets/images/UserInterface.png">
-            <div class="card-body">
-            <p class="card-text">Prototyping</p>
-          </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="assets/images/UserTesting.png">
-            <div class="card-body">
-            <p class="card-text">UserTesting</p>
-          </div>
-          </div>
-        </div>
-        <div class="space">
-        </div>
-        <h2>Grafica</h2>
-        <div class="space">
-        </div>
-        <div class="skills-display">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="assets/images/PS.png">
-            <div class="card-body">
-            <p class="card-text">Photoshop</p>
-          </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="assets/images/AI.png">
-            <div class="card-body">
-            <p class="card-text">Illustrator</p>
-          </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="assets/images/ID.png">
-            <div class="card-body">
-            <p class="card-text">InDesign</p>
-          </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="assets/images/XD.png">
-            <div class="card-body">
-            <p class="card-text">XD</p>
-          </div>
-          </div>
-        </div>
-        <div class="space">
-        </div>
-        <h2>Programmazione</h2>
-        <div class="space">
-        </div>
-        <div class="skills-display">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="assets/images/HTML.png">
-            <div class="card-body">
-            <p class="card-text">HTML</p>
-          </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="assets/images/CSS.png">
-            <div class="card-body">
-            <p class="card-text">CSS</p>
-          </div>
-          </div>
-        </div>
-        <div class="space">
-        </div>
-        <h2>Digital Marketing</h2>
-        <div class="space">
-        </div>
-        <div class="skills-display">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="assets/images/Copywriting.png">
-            <div class="card-body">
-            <p class="card-text">Copywriting</p>
-          </div>
-          </div>
-        </div>
-        <div class="space">
-        </div>
-        <h2>Lingue Straniere</h2>
-        <div class="space">
-        </div>
-        <div class="skills-display">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="assets/images/IngleseC1.png">
-            <div class="card-body">
-            <p class="card-text">Inglese C1</p>
-          </div>
-          </div>
-        </div>
-        <div class="space">
-        </div>
-        <h1>Soft Skills</h1>
-        <div class="space">
-        </div>
-        <div class="skills-display">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="assets/images/Fulmine.png">
-            <div class="card-body">
-            <p class="card-text">Proattività</p>
-          </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="assets/images/Mirino.png">
-            <div class="card-body">
-            <p class="card-text">Precisione</p>
-          </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="assets/images/Lampadina.png">
-            <div class="card-body">
-            <p class="card-text">Creatività</p>
-          </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="assets/images/Bussola.png">
-            <div class="card-body">
-            <p class="card-text">People Oriented</p>
-          </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="assets/images/Team.png">
-            <div class="card-body">
-            <p class="card-text">Team Working</p>
-          </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="assets/images/Mano.png">
-            <div class="card-body">
-            <p class="card-text">Mentoring</p>
-          </div>
-          </div>
-        </div>
-    </div><!-- /.container -->
-    <div class="social-container">
-        <a href="https://www.instagram.com/clarissa_cortese/"><img class="social" src='assets/images/Instagram.png'/></a>
-        <a href="https://www.facebook.com/ClarissaCortese3/"><img class="social" src='assets/images/Facebook.png'/></a>
-        <a href="https://www.linkedin.com/in/clarissa-cortese-42a9a5244/"><img class="social" src='assets/images/Linkedin.png'/></a>
-        <a href="https://www.goodreads.com/clarissacortese/"><img class="social" src='assets/images/Goodreads.png'/></a>
-    </div><!-- /.container -->
-    <footer class="footer">
-      <div class="footer-container">
-        <p class="text-muted">Clarissa Cortese - Portfolio - 2022</p>
       </div>
-    </footer>
-   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-   <script>window.jQuery || document.write('<script src="assets/bootstrap/jquery.min.js"><//script>')</script>
-   <script src="assets/bootstrap/bootstrap.min.js"></script>
-   <script src="assets/bootstrap/ie10-viewport-bug-workaround.js"></script>
+      <div class="py-4 text-center">
+        <h2>UX/UI Design</h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card mx-auto" style="width: 10rem;">
+            <img src="assets\images\Discovery.png" class="card-img-top mx-auto" style="width: 6rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Discovery</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card mx-auto" style="width: 10rem;">
+            <img src="assets\images\Wireframing.png" class="card-img-top mx-auto" style="width: 6rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Wireframing</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card mx-auto" style="width: 10rem;">
+            <img src="assets\images\UserInterface.png" class="card-img-top mx-auto" style="width: 6rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Prototyping</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card mx-auto" style="width: 10rem;">
+            <img src="assets\images\UserTesting.png" class="card-img-top mx-auto" style="width: 6rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">User Testing</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-4 text-center">
+        <h2>Grafica</h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card mx-auto" style="width: 10rem;">
+            <img src="assets\images\AI.png" class="card-img-top mx-auto" style="width: 6rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Illustrator</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card mx-auto" style="width: 10rem;">
+            <img src="assets\images\ID.png" class="card-img-top mx-auto" style="width: 6rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">InDesign</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card mx-auto" style="width: 10rem;">
+            <img src="assets\images\XD.png" class="card-img-top mx-auto" style="width: 6rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">XD</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card mx-auto" style="width: 10rem;">
+            <img src="assets\images\PS.png" class="card-img-top mx-auto" style="width: 6rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Photoshop</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-4 text-center">
+        <h2>Programmazione</h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-sm-3">
+          <div class="card mx-auto" style="width: 10rem;">
+            <img src="assets\images\HTML.png" class="card-img-top mx-auto" style="width: 6rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">HTML</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card mx-auto" style="width: 10rem;">
+            <img src="assets\images\CSS.png" class="card-img-top mx-auto" style="width: 6rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">CSS</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+      </div>
+      <div class="py-4 text-center">
+        <h2>Digital Marketing</h2>
+      </div>
+      <div class="">
+        <div class="card mx-auto" style="width: 10rem;">
+          <img src="assets\images\Copywriting.png" class="card-img-top mx-auto" style="width: 6rem;">
+          <div class="card-body">
+            <h5 class="card-title text-center">Copywriting</h5>
+          </div>
+        </div>
+      </div>
+      <div class="py-4 text-center">
+        <h2>Lingue Straniere</h2>
+      </div>
+      <div class="">
+        <div class="card mx-auto" style="width: 10rem;">
+          <img src="assets\images\IngleseC1.png" class="card-img-top mx-auto" style="width: 6rem;">
+          <div class="card-body">
+            <h5 class="card-title text-center">Inglese C1</h5>
+          </div>
+        </div>
+      </div>
+      <div class="py-4 text-center">
+        <h1>Soft Skills</h1>
+      </div>
+      <div class="row">
+        <div class="col">
+        </div>
+        <div class="col-sm-3">
+          <div class="card mx-auto" style="width: 10rem;">
+            <img src="assets\images\Bussola.png" class="card-img-top mx-auto" style="width: 6rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">People Oriented</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card mx-auto" style="width: 10rem;">
+            <img src="assets\images\Mirino.png" class="card-img-top mx-auto" style="width: 6rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Precisione</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card mx-auto" style="width: 10rem;">
+            <img src="assets\images\Fulmine.png" class="card-img-top mx-auto" style="width: 6rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Proattività</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+        </div>
+        <div class="col-sm-3">
+          <div class="card mx-auto" style="width: 10rem;">
+            <img src="assets\images\Lampadina.png" class="card-img-top mx-auto" style="width: 6rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Creatività</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card mx-auto" style="width: 10rem;">
+            <img src="assets\images\Team.png" class="card-img-top mx-auto" style="width: 6rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Team Working</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card mx-auto" style="width: 10rem;">
+            <img src="assets\images\Mano.png" class="card-img-top mx-auto" style="width: 6rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Mentoring</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+        </div>
+      </div>
+    </div>
+    <!-- Skills -->
+    <!-- Footer -->
+    <div class="container-fluid fixed-bottom footer-cont border-top">
+        <footer class="d-flex flex-wrap justify-content-around align-items-center py-3 my-4">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <img class="bi" width="30" height="24" src="assets\images\cc.png">
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Clarissa Cortese</span>
+          </div>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/clarissa_cortese/" target="_blank" rel="noopener"><img class="bi" width="24" height="24" src='assets/images/Instagram.png'></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/ClarissaCortese3/" target="_blank" rel="noopener"><img class="bi" width="24" height="24" src='assets/images/Facebook.png'></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/clarissa-cortese-42a9a5244/" target="_blank" rel="noopener"><img class="bi" width="24" height="24" src='assets/images/Linkedin.png'></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://www.goodreads.com/clarissacortese/" target="_blank" rel="noopener"><img class="bi" width="24" height="24" src='assets/images/Goodreads.png'></a></li>
+          </ul>
+        </footer>
+    </div>
+    <!-- Footer -->
+   <script src="assets\bootstrap\bootstrap.bundle.min.js"></script>
   </body>
 </html>
