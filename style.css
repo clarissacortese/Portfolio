@@ -1,7 +1,6 @@
 body {
   min-height: 75rem;
   padding-top: 4.5rem;
-  margin-bottom: 100px;
   font-family: 'Righteous', cursive;
   color: #2B4038;
   background-color: #F0ECED;
@@ -49,7 +48,6 @@ h2 {
 .my-name {
   font-family: 'WindSong', cursive;
   font-size: 70px;
-  font-weight: lighter;
 }
 
 .btn-primary {
@@ -115,8 +113,12 @@ h2 {
 
 .form-template {
   font-size: 20px;
-  padding-left: 20%;
-  padding-right: 20%;
+  text-align: center;
+}
+
+label {
+  text-align: left;
+  align-self: center;
 }
 
 input[type=text], select {
@@ -129,9 +131,9 @@ input[type=text], select {
   box-sizing: border-box;
 }
 
-textarea, select {
+.textarea, select {
   width: 100%;
-  padding: 40px 20px;
+  padding: 20px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
