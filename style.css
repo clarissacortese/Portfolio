@@ -87,17 +87,20 @@ h2 {
   background-color: rgba(206, 120, 107, 0.3);
   box-shadow: 0 0 20px #2B4038;
   border-radius: 20px;
-}
-
-.home-img2 {
-  background-color: rgba(206, 120, 107, 0.3);
-  box-shadow: 0 0 20px #2B4038;
-  border-radius: 20px;
-  height: 45%;
+  max-height: 500px;
 }
 
 .homeux {
-  padding: 5px;
+  padding-bottom: 10px;
+}
+
+.libriux {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.book-img {
+  max-height: 400px;
 }
 
 /* Home */
