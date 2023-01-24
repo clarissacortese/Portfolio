@@ -1,0 +1,59 @@
+.skill {
+  padding: 40px 0 40px 0;
+  position: relative;
+  height: 100vh;
+  background-image: url("../../imgs/color-sharp.png");
+  background-size: cover;
+}
+
+.skill-bx {
+  background: #030102;
+  text-align: center;
+  padding: 30px 50px;
+}
+
+.bx-1 {
+  border-radius: 64px 64px 0 0;
+}
+
+.bx-2 {
+  border-radius: 0 0 64px 64px;
+}
+
+.skill h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.skill p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px 0 75px 0;
+}
+
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.skill-slider .item img {
+  height: 80px;
+  width: auto;
+  margin: 0 auto 15px auto;
+}
+
+@media screen and (max-width:768px) {
+  .skill {
+    width: 100vw;
+    margin: 0;
+  }
+  
+  .skill-bx {
+    margin: 0 10px;
+    padding: 30px 50px;
+  }
+}
