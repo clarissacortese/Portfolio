@@ -12,7 +12,7 @@ export default function Footer () {
       </div>
       <div className="footer-item">
         <p>Copyright 2023. All Rights Reserved</p>
-        <a href="https://storyset.com/work" target="_blank" rel="noreferrer">Work illustrations by Storyset</a>
+        <a href="https://storyset.com/cuate" target="_blank" rel="noreferrer">Illustrations by Storyset</a>
       </div>
       <div className="footer-item social-icon">
         <a href="https://www.linkedin.com/in/clarissacortese/" target="_blank" rel="noreferrer"><img src={navIcon1} alt="Icon" /></a>

@@ -7,8 +7,10 @@ import Git from "../../imgs/git-icon.png";
 import GitHub from "../../imgs/github-icon.png";
 import Figma from "../../imgs/figma.png";
 import SQL from "../../imgs/sql.png";
-import PHP from "../../imgs/php.png";
-import WordPress from "../../imgs/wordpress.png";
+import NodeJs from "../../imgs/nodejs.png";
+import Angular from "../../imgs/angular.png";
+import Tailwind from "../../imgs/tailwindcss.png";
+import Sass from "../../imgs/sass.png";
 import TypeScript from "../../imgs/typescript.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -55,6 +57,10 @@ export default function Skills () {
                                 <img src={Js} alt="icona skill JavaScript" />
                             </div>
                             <div className="item">
+                                <h5>TypeScript</h5>
+                                <img src={TypeScript} alt="icona skill TypeScript" />
+                            </div>
+                            <div className="item">
                                 <h5>React</h5>
                                 <img src={React} alt="icona skill React" />
                             </div>
@@ -86,16 +92,20 @@ export default function Skills () {
                         <h2>Sto studiando:</h2>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <h5>PHP</h5>
-                                <img src={PHP} alt="icona skill PHP" />
+                                <h5>Angular</h5>
+                                <img src={Angular} alt="icona skill Angulas" />
                             </div>
                             <div className="item">
-                                <h5>WordPress</h5>
-                                <img src={WordPress} alt="icona skill WordPress" />
+                                <h5>Sass</h5>
+                                <img src={Sass} alt="icona skill Sass" />
                             </div>
                             <div className="item">
-                                <h5>TypeScript</h5>
-                                <img src={TypeScript} alt="icona skill TypeScript" />
+                                <h5>Tailwind CSS</h5>
+                                <img src={Tailwind} alt="icona skill Tailwind CSS" />
+                            </div>
+                            <div className="item">
+                                <h5>Node.js</h5>
+                                <img src={NodeJs} alt="icona skill Node.js" />
                             </div>
                         </Carousel>
                     </div>
