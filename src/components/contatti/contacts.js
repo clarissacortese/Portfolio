@@ -7,13 +7,15 @@ import TrackVisibility from 'react-on-screen';
 import "./contacts.css"
 
 export default function Contatti () {
+
+  const emailKey = process.env.REACT_APP_EMAIL_KEY
   
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_portfolio', 'template_z3to298', form.current, 'nh5BI2iyT1Q90fW4h')
+    emailjs.sendForm('service_portfolio', 'template_z3to298', form.current, emailKey)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
