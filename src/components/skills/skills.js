@@ -5,13 +5,15 @@ import React from "../../imgs/react.png";
 import Bootstrap from "../../imgs/bootstrap.png";
 import Git from "../../imgs/git-icon.png";
 import GitHub from "../../imgs/github-icon.png";
-import Figma from "../../imgs/figma.png";
+import WordPress from "../../imgs/wordpress.png";
 import SQL from "../../imgs/sql.png";
 import NodeJs from "../../imgs/nodejs.png";
 import Angular from "../../imgs/angular.png";
 import Tailwind from "../../imgs/tailwindcss.png";
 import Sass from "../../imgs/sass.png";
 import TypeScript from "../../imgs/typescript.png";
+import Python from "../../imgs/python.png";
+import MongoDB from "../../imgs/mongodb.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import "./skills.css"
@@ -69,8 +71,16 @@ export default function Skills () {
                                 <img src={Bootstrap} alt="icona skill Bootstrap" />
                             </div>
                             <div className="item">
+                                <h5>Tailwind CSS</h5>
+                                <img src={Tailwind} alt="icona skill Tailwind CSS" />
+                            </div>
+                            <div className="item">
                                 <h5>SQL</h5>
                                 <img src={SQL} alt="icona skill SQL" />
+                            </div>
+                            <div className="item">
+                                <h5>MongoDB</h5>
+                                <img src={MongoDB} alt="icona skill MongoDB" />
                             </div>
                             <div className="item">
                                 <h5>Git</h5>
@@ -81,8 +91,12 @@ export default function Skills () {
                                 <img src={GitHub} alt="icona skill GitHub" />
                             </div>
                             <div className="item">
-                                <h5>UX Design</h5>
-                                <img src={Figma} alt="icona skill UX Design, logo Figma" />
+                                <h5>Node.js</h5>
+                                <img src={NodeJs} alt="icona skill Node.js" />
+                            </div>
+                            <div className="item">
+                                <h5>WordPress</h5>
+                                <img src={WordPress} alt="icona skill WordPress" />
                             </div>
                         </Carousel>
                     </div>
@@ -100,12 +114,8 @@ export default function Skills () {
                                 <img src={Sass} alt="icona skill Sass" />
                             </div>
                             <div className="item">
-                                <h5>Tailwind CSS</h5>
-                                <img src={Tailwind} alt="icona skill Tailwind CSS" />
-                            </div>
-                            <div className="item">
-                                <h5>Node.js</h5>
-                                <img src={NodeJs} alt="icona skill Node.js" />
+                                <h5>Python</h5>
+                                <img src={Python} alt="icona skill Python" />
                             </div>
                         </Carousel>
                     </div>
