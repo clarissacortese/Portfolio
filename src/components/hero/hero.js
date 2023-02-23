@@ -13,7 +13,7 @@ export default function Hero () {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   // eslint-disable-next-line
   const [index, setIndex] = useState(1);
-  const memoizedToRotate = useMemo(() => [ "Front-end Developer", "Nerd" ], []);
+  const memoizedToRotate = useMemo(() => [ "Developer", "Nerd" ], []);
   const period = 2000;
 
   const tick = useCallback(() => {
@@ -69,7 +69,7 @@ export default function Hero () {
             <TrackVisibility className="hero-title">
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h1>{`Ciao! Sono Clarissa, una`} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Front-end Developer", "Nerd" ]'><br /><span className="wrap">{text}</span></span></h1>
+                <h1>{`Ciao! Sono Clarissa, una`} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Developer", "Nerd" ]'><br /><span className="wrap">{text}</span></span></h1>
                 <button onClick={onButtonClick}>Curriculum Vitae <ArrowDownCircle size={25} /></button>
               </div>}
             </TrackVisibility>
