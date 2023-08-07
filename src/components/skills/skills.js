@@ -8,11 +8,13 @@ import GitHub from "../../imgs/github-icon.png";
 import WordPress from "../../imgs/wordpress.png";
 import SQL from "../../imgs/sql.png";
 import NodeJs from "../../imgs/nodejs.png";
-import Angular from "../../imgs/angular.png";
+import Spring from "../../imgs/spring.png";
+import Next from "../../imgs/nextjs.png";
+import Dart from "../../imgs/dart.png";
 import Tailwind from "../../imgs/tailwindcss.png";
-import Sass from "../../imgs/sass.png";
+import StoryBook from "../../imgs/storybook.png";
 import TypeScript from "../../imgs/typescript.png";
-import Python from "../../imgs/python.png";
+import Java from "../../imgs/java.png";
 import MongoDB from "../../imgs/mongodb.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -67,6 +69,14 @@ export default function Skills () {
                                 <img src={React} alt="icona skill React" />
                             </div>
                             <div className="item">
+                                <h5>Java</h5>
+                                <img src={Java} alt="icona skill JavaScript" />
+                            </div>
+                            <div className="item">
+                                <h5>Spring Boot</h5>
+                                <img src={Spring} alt="icona skill JavaScript" />
+                            </div>
+                            <div className="item">
                                 <h5>Bootstrap</h5>
                                 <img src={Bootstrap} alt="icona skill Bootstrap" />
                             </div>
@@ -75,7 +85,7 @@ export default function Skills () {
                                 <img src={Tailwind} alt="icona skill Tailwind CSS" />
                             </div>
                             <div className="item">
-                                <h5>SQL</h5>
+                                <h5>SQL e PL/SQL</h5>
                                 <img src={SQL} alt="icona skill SQL" />
                             </div>
                             <div className="item">
@@ -98,6 +108,7 @@ export default function Skills () {
                                 <h5>WordPress</h5>
                                 <img src={WordPress} alt="icona skill WordPress" />
                             </div>
+                            
                         </Carousel>
                     </div>
                 </div>
@@ -106,16 +117,20 @@ export default function Skills () {
                         <h2>Sto studiando:</h2>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <h5>Angular</h5>
-                                <img src={Angular} alt="icona skill Angulas" />
+                                <h5>Dart</h5>
+                                <img src={Dart} alt="icona skill Angulas" />
                             </div>
                             <div className="item">
-                                <h5>Sass</h5>
-                                <img src={Sass} alt="icona skill Sass" />
+                                <h5>React Native</h5>
+                                <img src={React} alt="icona skill Sass" />
                             </div>
                             <div className="item">
-                                <h5>Python</h5>
-                                <img src={Python} alt="icona skill Python" />
+                                <h5>Next.js</h5>
+                                <img src={Next} alt="icona skill Python" />
+                            </div>
+                            <div className="item">
+                                <h5>StoryBook</h5>
+                                <img src={StoryBook} alt="icona skill Python" />
                             </div>
                         </Carousel>
                     </div>
