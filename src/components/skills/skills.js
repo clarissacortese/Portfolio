@@ -16,6 +16,8 @@ import StoryBook from "../../imgs/storybook.png";
 import TypeScript from "../../imgs/typescript.png";
 import Java from "../../imgs/java.png";
 import MongoDB from "../../imgs/mongodb.png";
+import MUI from "../../imgs/material-ui.png";
+import styledComponents from "../../imgs/styled-components.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import "./skills.css"
@@ -70,11 +72,11 @@ export default function Skills () {
                             </div>
                             <div className="item">
                                 <h5>Java</h5>
-                                <img src={Java} alt="icona skill JavaScript" />
+                                <img src={Java} alt="icona skill Java" />
                             </div>
                             <div className="item">
                                 <h5>Spring Boot</h5>
-                                <img src={Spring} alt="icona skill JavaScript" />
+                                <img src={Spring} alt="icona skill Spring Boot" />
                             </div>
                             <div className="item">
                                 <h5>Bootstrap</h5>
@@ -86,7 +88,7 @@ export default function Skills () {
                             </div>
                             <div className="item">
                                 <h5>SQL e PL/SQL</h5>
-                                <img src={SQL} alt="icona skill SQL" />
+                                <img src={SQL} alt="icona skill SQL e PL/SQL" />
                             </div>
                             <div className="item">
                                 <h5>MongoDB</h5>
@@ -108,6 +110,14 @@ export default function Skills () {
                                 <h5>WordPress</h5>
                                 <img src={WordPress} alt="icona skill WordPress" />
                             </div>
+                            <div className="item">
+                                <h5>Material UI</h5>
+                                <img src={MUI} alt="icona skill Material UI" />
+                            </div>
+                            <div className="item">
+                                <h5>Styled-Components</h5>
+                                <img src={styledComponents} alt="icona skill Styled-Components" />
+                            </div>
                             
                         </Carousel>
                     </div>
@@ -118,19 +128,19 @@ export default function Skills () {
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <h5>Dart</h5>
-                                <img src={Dart} alt="icona skill Angulas" />
+                                <img src={Dart} alt="icona skill Dart" />
                             </div>
                             <div className="item">
                                 <h5>React Native</h5>
-                                <img src={React} alt="icona skill Sass" />
+                                <img src={React} alt="icona skill React Native" />
                             </div>
                             <div className="item">
                                 <h5>Next.js</h5>
-                                <img src={Next} alt="icona skill Python" />
+                                <img src={Next} alt="icona skill Next.js" />
                             </div>
                             <div className="item">
                                 <h5>StoryBook</h5>
-                                <img src={StoryBook} alt="icona skill Python" />
+                                <img src={StoryBook} alt="icona skill StroyBook" />
                             </div>
                         </Carousel>
                     </div>
